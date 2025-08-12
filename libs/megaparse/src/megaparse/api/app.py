@@ -88,15 +88,15 @@ async def parse_file(
         else:
             raise HTTPModelNotSupported()
 
-    # parser_config = ParseFileConfig( #FIXME
-    #     method=method,
-    #     strategy=strategy,
-    #     llm_model_name=SupportedModel(model_name) if model_name and check_table else None,
-    #     language=language,
-    #     parsing_instruction=parsing_instruction,
-    # )
+    parser_config = ParseFileConfig( #FIXME
+        method=method,
+        strategy=strategy,
+        llm_model_name=SupportedModel(model_name) if model_name and check_table else None,
+        language=language,
+        parsing_instruction=parsing_instruction,
+    )
     try:
-        # parser = parser_builder.build(parser_config)
+        parser = parser_builder.build(parser_config)
         megaparse = MegaParse()
         if not file.filename:
             raise HTTPFileNotFound("No filename provided")

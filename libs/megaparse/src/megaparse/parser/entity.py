@@ -14,6 +14,10 @@ class TagEnum(str, Enum):
 class SupportedModel(Enum):
     GPT_4O = ("gpt-4o", None)
     GPT_4O_TURBO = ("gpt-4o-turbo", None)
+    GPT_5 = ("gpt-5", None)
+    GPT_5_MINI = ("gpt-5-mini", None)
+    GPT_5_NANO = ("gpt-5-nano", None)
+    
     CLAUDE_3_5_SONNET = ("claude-3-5-sonnet", ["latest", "20241022"])
     CLAUDE_3_OPUS = ("claude-3-opus", ["latest", "20240229"])
 

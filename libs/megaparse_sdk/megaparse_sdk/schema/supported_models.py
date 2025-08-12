@@ -10,6 +10,9 @@ class SupportedModel(str, Enum):
     GPT_3_5_TURBO = "gpt-3.5-turbo"
     GPT_4O = "gpt-4o"
     GPT_4O_MINI = "gpt-4o-mini"
+    GPT_5 = "gpt-5"
+    GPT_5_MINI = "gpt-5-mini"
+    GPT_5_NANO = "gpt-5-nano"
 
     # Anthropic Models
     CLAUDE_3_5_SONNET_LATEST = "claude-3-5-sonnet-latest"

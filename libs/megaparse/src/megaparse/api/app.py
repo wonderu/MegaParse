@@ -66,7 +66,7 @@ async def parse_file(
     check_table: bool = Form(False),
     language: Language = Form(Language.ENGLISH),
     parsing_instruction: Optional[str] = Form(None),
-    model_name: Optional[SupportedModel] = Form(SupportedModel.GPT_4O),
+    model_name: Optional[SupportedModel] = Form(SupportedModel.GPT_5_NANO),
     parser_builder=Depends(parser_builder_dep),
 ) -> dict[str, str | Document]:
     if not _check_free_memory():
